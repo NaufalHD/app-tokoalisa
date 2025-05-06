@@ -1,0 +1,91 @@
+CRITICAL - 2023-05-09 19:36:15 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\Transaksi.php on line 274.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaksi->prosesPembayaran()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-09 20:35:03 --> mysqli_sql_exception: Column 'nm_kostumer' cannot be null in C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\tokoklontong\app\Controllers\Transaksi.php(264): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Transaksi->prosesPembayaran()
+#9 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#10 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\tokoklontong\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-09 20:35:04 --> Column 'nm_kostumer' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tbl_transaksi` (`invoice`, `nm_kostumer`, `nm_kostumer_id`, `total_harga`, `diskon`, `harga_final`, `tunai`, `kembalian`, `is_hutang`, `catatan`, `user_id`, `tanggal`, `created_at`) VALUES (\'TK0905230001\', NULL, NULL, \'20000\', \'0\', \'20000\', \'11233\', \'-8767\', 1, \'\', \'0\', \'2023-05-09\', \'2023-05-09 20:35:03\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_transaksi` (`invoice`, `nm_kostumer`, `nm_kostumer_id`, `total_harga`, `diskon`, `harga_final`, `tunai`, `kembalian`, `is_hutang`, `catatan`, `user_id`, `tanggal`, `created_at`) VALUES (\'TK0905230001\', NULL, NULL, \'20000\', \'0\', \'20000\', \'11233\', \'-8767\', 1, \'\', \'0\', \'2023-05-09\', \'2023-05-09 20:35:03\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_transaksi` (`invoice`, `nm_kostumer`, `nm_kostumer_id`, `total_harga`, `diskon`, `harga_final`, `tunai`, `kembalian`, `is_hutang`, `catatan`, `user_id`, `tanggal`, `created_at`) VALUES (\'TK0905230001\', NULL, NULL, \'20000\', \'0\', \'20000\', \'11233\', \'-8767\', 1, \'\', \'0\', \'2023-05-09\', \'2023-05-09 20:35:03\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_transaksi` (`invoice`, `nm_kostumer`, `nm_kostumer_id`, `total_harga`, `diskon`, `harga_final`, `tunai`, `kembalian`, `is_hutang`, `catatan`, `user_id`, `tanggal`, `created_at`) VALUES (:invoice:, :nm_kostumer:, :nm_kostumer_id:, :total_harga:, :diskon:, :harga_final:, :tunai:, :kembalian:, :is_hutang:, :catatan:, :user_id:, :tanggal:, :created_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Transaksi.php(264): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaksi->prosesPembayaran()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-09 21:17:20 --> Undefined variable: pelanggan_terbaru
+in APPPATH\Controllers\Transaksi.php on line 362.
+ 1 APPPATH\Controllers\Transaksi.php(362): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pelanggan_terbaru', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\Transaksi.php', 362, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaksi->prosesPembayaran()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-09 22:05:06 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\HutangPelanggan.php on line 144.
+ 1 APPPATH\Controllers\HutangPelanggan.php(144): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\HutangPelanggan.php', 144, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HutangPelanggan->getDataHutangPelanggan()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HutangPelanggan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-09 22:16:57 --> Trying to get property 'pelanggan_nama' of non-object
+in APPPATH\Controllers\HutangPelanggan.php on line 99.
+ 1 APPPATH\Controllers\HutangPelanggan.php(99): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'pelanggan_nama\' of non-object', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\HutangPelanggan.php', 99, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HutangPelanggan->b()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HutangPelanggan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-09 22:16:59 --> Trying to get property 'pelanggan_nama' of non-object
+in APPPATH\Controllers\HutangPelanggan.php on line 99.
+ 1 APPPATH\Controllers\HutangPelanggan.php(99): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'pelanggan_nama\' of non-object', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\HutangPelanggan.php', 99, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HutangPelanggan->b()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HutangPelanggan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-09 22:17:10 --> Trying to get property 'pelanggan_nama' of non-object
+in APPPATH\Controllers\HutangPelanggan.php on line 99.
+ 1 APPPATH\Controllers\HutangPelanggan.php(99): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'pelanggan_nama\' of non-object', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\HutangPelanggan.php', 99, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HutangPelanggan->b()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HutangPelanggan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-09 22:18:37 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\HutangPelanggan.php on line 156.
+ 1 APPPATH\Controllers\HutangPelanggan.php(156): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\HutangPelanggan.php', 156, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HutangPelanggan->getDataHutangPelanggan()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HutangPelanggan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-09 22:18:47 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\HutangPelanggan.php on line 156.
+ 1 APPPATH\Controllers\HutangPelanggan.php(156): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\HutangPelanggan.php', 156, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HutangPelanggan->getDataHutangPelanggan()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HutangPelanggan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-09 22:21:57 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\HutangPelanggan.php on line 159.
+ 1 APPPATH\Controllers\HutangPelanggan.php(159): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\HutangPelanggan.php', 159, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HutangPelanggan->getDataHutangPelanggan()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HutangPelanggan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

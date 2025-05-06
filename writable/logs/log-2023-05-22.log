@@ -1,0 +1,77 @@
+CRITICAL - 2023-05-22 20:48:04 --> Trying to get property 'invoice' of non-object
+in APPPATH\Views\transaksi\receipt_no_print.php on line 5.
+ 1 APPPATH\Views\transaksi\receipt_no_print.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'invoice\' of non-object', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Views\\transaksi\\receipt_no_print.php', 5, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\tokoklontong\\app\\Views\\transaksi\\receipt_no_print.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('transaksi/receipt_no_print', [], true)
+ 5 APPPATH\Controllers\Transaksi.php(541): view('transaksi/receipt_no_print', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaksi->cetak_no_print('1073')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-22 20:48:27 --> Trying to get property 'invoice' of non-object
+in APPPATH\Views\transaksi\receipt_no_print.php on line 5.
+ 1 APPPATH\Views\transaksi\receipt_no_print.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'invoice\' of non-object', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Views\\transaksi\\receipt_no_print.php', 5, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\tokoklontong\\app\\Views\\transaksi\\receipt_no_print.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('transaksi/receipt_no_print', [], true)
+ 5 APPPATH\Controllers\Transaksi.php(541): view('transaksi/receipt_no_print', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaksi->cetak_no_print('1077')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-22 20:50:28 --> Trying to get property 'invoice' of non-object
+in APPPATH\Views\transaksi\receipt_no_print.php on line 5.
+ 1 APPPATH\Views\transaksi\receipt_no_print.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'invoice\' of non-object', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Views\\transaksi\\receipt_no_print.php', 5, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\tokoklontong\\app\\Views\\transaksi\\receipt_no_print.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('transaksi/receipt_no_print', [], true)
+ 5 APPPATH\Controllers\Transaksi.php(541): view('transaksi/receipt_no_print', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaksi->cetak_no_print('1079')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-22 20:51:45 --> Trying to get property 'invoice' of non-object
+in APPPATH\Views\transaksi\receipt_no_print.php on line 5.
+ 1 APPPATH\Views\transaksi\receipt_no_print.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'invoice\' of non-object', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Views\\transaksi\\receipt_no_print.php', 5, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\tokoklontong\\app\\Views\\transaksi\\receipt_no_print.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('transaksi/receipt_no_print', [], true)
+ 5 APPPATH\Controllers\Transaksi.php(541): view('transaksi/receipt_no_print', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaksi->cetak_no_print('1078')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-22 20:51:50 --> Trying to get property 'invoice' of non-object
+in APPPATH\Views\transaksi\receipt_no_print.php on line 5.
+ 1 APPPATH\Views\transaksi\receipt_no_print.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'invoice\' of non-object', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Views\\transaksi\\receipt_no_print.php', 5, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\tokoklontong\\app\\Views\\transaksi\\receipt_no_print.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('transaksi/receipt_no_print', [], true)
+ 5 APPPATH\Controllers\Transaksi.php(541): view('transaksi/receipt_no_print', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaksi->cetak_no_print('1077')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-22 20:51:57 --> Trying to get property 'invoice' of non-object
+in APPPATH\Views\transaksi\receipt_no_print.php on line 5.
+ 1 APPPATH\Views\transaksi\receipt_no_print.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'invoice\' of non-object', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Views\\transaksi\\receipt_no_print.php', 5, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\tokoklontong\\app\\Views\\transaksi\\receipt_no_print.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('transaksi/receipt_no_print', [], true)
+ 5 APPPATH\Controllers\Transaksi.php(541): view('transaksi/receipt_no_print', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaksi->cetak_no_print('1073')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-22 20:52:06 --> Trying to get property 'invoice' of non-object
+in APPPATH\Views\transaksi\receipt_no_print.php on line 5.
+ 1 APPPATH\Views\transaksi\receipt_no_print.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'invoice\' of non-object', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Views\\transaksi\\receipt_no_print.php', 5, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\tokoklontong\\app\\Views\\transaksi\\receipt_no_print.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('transaksi/receipt_no_print', [], true)
+ 5 APPPATH\Controllers\Transaksi.php(541): view('transaksi/receipt_no_print', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaksi->cetak_no_print('1078')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

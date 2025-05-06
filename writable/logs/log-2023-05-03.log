@@ -1,0 +1,6 @@
+CRITICAL - 2023-05-03 21:15:17 --> Too few arguments to function App\Controllers\Admin::delete(), 0 passed in C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Admin.php on line 227.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->delete()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

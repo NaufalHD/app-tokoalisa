@@ -1,0 +1,11 @@
+CRITICAL - 2023-05-20 09:30:20 --> Undefined variable: item_barang
+in APPPATH\Views\record_transaksi\index.php on line 164.
+ 1 APPPATH\Views\record_transaksi\index.php(164): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: item_barang', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Views\\record_transaksi\\index.php', 164, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\tokoklontong\\app\\Views\\record_transaksi\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('record_transaksi/index', [], true)
+ 5 APPPATH\Controllers\RecordTransaksi.php(27): view('record_transaksi/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RecordTransaksi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecordTransaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

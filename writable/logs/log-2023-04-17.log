@@ -1,0 +1,28 @@
+CRITICAL - 2023-04-17 13:38:58 --> Trying to get property 'id_cart' of non-object
+in APPPATH\Controllers\Pelanggan.php on line 41.
+ 1 APPPATH\Controllers\Pelanggan.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'id_cart\' of non-object', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\Pelanggan.php', 41, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pelanggan->getDataPelanggan()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 13:41:07 --> Trying to get property 'pelanggan_id' of non-object
+in APPPATH\Controllers\Pelanggan.php on line 41.
+ 1 APPPATH\Controllers\Pelanggan.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'pelanggan_id\' of non-object', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\Pelanggan.php', 41, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pelanggan->getDataPelanggan()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 13:43:28 --> Trying to get property 'pelanggan_id' of non-object
+in APPPATH\Controllers\Pelanggan.php on line 37.
+ 1 APPPATH\Controllers\Pelanggan.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'pelanggan_id\' of non-object', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\Pelanggan.php', 37, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pelanggan->getDataPelanggan()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 13:45:49 --> Undefined property: App\Controllers\Pelanggan::$OmzetHarianModel
+in APPPATH\Controllers\Pelanggan.php on line 192.
+ 1 APPPATH\Controllers\Pelanggan.php(192): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Pelanggan::$OmzetHarianModel', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\Pelanggan.php', 192, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pelanggan->edit('12')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

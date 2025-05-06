@@ -1,0 +1,22 @@
+CRITICAL - 2023-04-30 20:42:19 --> Undefined index: stok_id
+in APPPATH\Views\stok_barang\index.php on line 91.
+ 1 APPPATH\Views\stok_barang\index.php(91): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: stok_id', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Views\\stok_barang\\index.php', 91, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\tokoklontong\\app\\Views\\stok_barang\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('stok_barang/index', [], true)
+ 5 APPPATH\Controllers\StokBarang.php(78): view('stok_barang/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\StokBarang->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StokBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-30 20:42:28 --> Undefined index: stok_id
+in APPPATH\Views\stok_barang\index.php on line 91.
+ 1 APPPATH\Views\stok_barang\index.php(91): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: stok_id', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Views\\stok_barang\\index.php', 91, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\tokoklontong\\app\\Views\\stok_barang\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('stok_barang/index', [], true)
+ 5 APPPATH\Controllers\StokBarang.php(78): view('stok_barang/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\StokBarang->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StokBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,191 @@
+CRITICAL - 2023-10-09 14:20:04 --> Class 'App\Models\LoginModel' not found
+in APPPATH\Controllers\Logout.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Logout->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-09 14:21:17 --> Class 'App\Models\LoginModel' not found
+in APPPATH\Controllers\Logout.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Logout->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-09 14:21:36 --> Class 'App\Models\LoginModel' not found
+in APPPATH\Controllers\Logout.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Logout->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-09 14:21:54 --> Class 'App\Models\LoginModel' not found
+in APPPATH\Controllers\Logout.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Logout->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-09 14:24:21 --> Class 'App\Models\LoginModel' not found
+in APPPATH\Controllers\Logout.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Logout->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-09 15:01:00 --> Class 'Config\FileHandler' not found
+in SYSTEMPATH\Config\Services.php on line 667.
+ 1 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 2 SYSTEMPATH\Config\BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 3 SYSTEMPATH\Config\Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 4 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session()
+ 5 SYSTEMPATH\Common.php(988): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 6 APPPATH\Controllers\Logout.php(16): session()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Logout->process()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logout))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-09 15:05:09 --> Undefined property: Config\App::$sessionDriver
+in SYSTEMPATH\Config\Services.php on line 652.
+ 1 SYSTEMPATH\Config\Services.php(652): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: Config\\App::$sessionDriver', 'C:\\xampp\\htdocs\\tokoklontong\\vendor\\codeigniter4\\framework\\system\\Config\\Services.php', 652, [...])
+ 2 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 3 SYSTEMPATH\Config\BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 4 SYSTEMPATH\Config\Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 5 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session()
+ 6 SYSTEMPATH\Common.php(988): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 7 APPPATH\Controllers\Logout.php(16): session()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Logout->process()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Logout))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-09 15:05:14 --> Undefined property: Config\App::$sessionDriver
+in SYSTEMPATH\Config\Services.php on line 652.
+ 1 SYSTEMPATH\Config\Services.php(652): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: Config\\App::$sessionDriver', 'C:\\xampp\\htdocs\\tokoklontong\\vendor\\codeigniter4\\framework\\system\\Config\\Services.php', 652, [...])
+ 2 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 3 SYSTEMPATH\Config\BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 4 SYSTEMPATH\Config\Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 5 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session()
+ 6 SYSTEMPATH\Common.php(988): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 7 APPPATH\Controllers\Home.php(19): session()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-09 18:23:54 --> Undefined variable: data_supplier_row
+in APPPATH\Views\hutang_pelanggan\index.php on line 362.
+ 1 APPPATH\Views\hutang_pelanggan\index.php(362): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data_supplier_row', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Views\\hutang_pelanggan\\index.php', 362, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\tokoklontong\\app\\Views\\hutang_pelanggan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('hutang_pelanggan/index', [], true)
+ 5 APPPATH\Controllers\HutangPelanggan.php(31): view('hutang_pelanggan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HutangPelanggan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HutangPelanggan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-09 22:15:13 --> Undefined index: hutang_nominal
+in APPPATH\Controllers\HutangPelanggan.php on line 510.
+ 1 APPPATH\Controllers\HutangPelanggan.php(510): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: hutang_nominal', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\HutangPelanggan.php', 510, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HutangPelanggan->sum_nominal_hutang_total_bayar()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HutangPelanggan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-09 22:15:28 --> Undefined index: hutang_nominal
+in APPPATH\Controllers\HutangPelanggan.php on line 510.
+ 1 APPPATH\Controllers\HutangPelanggan.php(510): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: hutang_nominal', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\HutangPelanggan.php', 510, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HutangPelanggan->sum_nominal_hutang_total_bayar()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HutangPelanggan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-09 22:15:38 --> Undefined index: hutang_nominal
+in APPPATH\Controllers\HutangPelanggan.php on line 510.
+ 1 APPPATH\Controllers\HutangPelanggan.php(510): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: hutang_nominal', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\HutangPelanggan.php', 510, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HutangPelanggan->sum_nominal_hutang_total_bayar()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HutangPelanggan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-09 22:18:19 --> Undefined index: hutang_nominal
+in APPPATH\Controllers\HutangPelanggan.php on line 510.
+ 1 APPPATH\Controllers\HutangPelanggan.php(510): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: hutang_nominal', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\HutangPelanggan.php', 510, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HutangPelanggan->sum_nominal_hutang_total_bayar()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HutangPelanggan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-09 22:19:01 --> Undefined index: hutang_nominal
+in APPPATH\Controllers\HutangPelanggan.php on line 510.
+ 1 APPPATH\Controllers\HutangPelanggan.php(510): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: hutang_nominal', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\HutangPelanggan.php', 510, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HutangPelanggan->sum_nominal_hutang_total_bayar()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HutangPelanggan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-09 22:19:11 --> Undefined index: hutang_nominal
+in APPPATH\Controllers\HutangPelanggan.php on line 510.
+ 1 APPPATH\Controllers\HutangPelanggan.php(510): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: hutang_nominal', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\HutangPelanggan.php', 510, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HutangPelanggan->sum_nominal_hutang_total_bayar()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HutangPelanggan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-09 22:19:28 --> Undefined index: hutang_nominal
+in APPPATH\Controllers\HutangPelanggan.php on line 510.
+ 1 APPPATH\Controllers\HutangPelanggan.php(510): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: hutang_nominal', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\HutangPelanggan.php', 510, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HutangPelanggan->sum_nominal_hutang_total_bayar()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HutangPelanggan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-09 22:19:36 --> Undefined index: hutang_nominal
+in APPPATH\Controllers\HutangPelanggan.php on line 510.
+ 1 APPPATH\Controllers\HutangPelanggan.php(510): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: hutang_nominal', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\HutangPelanggan.php', 510, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HutangPelanggan->sum_nominal_hutang_total_bayar()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HutangPelanggan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-09 22:20:02 --> Undefined index: hutang_nominal
+in APPPATH\Controllers\HutangPelanggan.php on line 510.
+ 1 APPPATH\Controllers\HutangPelanggan.php(510): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: hutang_nominal', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\HutangPelanggan.php', 510, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HutangPelanggan->sum_nominal_hutang_total_bayar()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HutangPelanggan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-09 22:20:46 --> Undefined index: hutang_nominal
+in APPPATH\Controllers\HutangPelanggan.php on line 510.
+ 1 APPPATH\Controllers\HutangPelanggan.php(510): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: hutang_nominal', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\HutangPelanggan.php', 510, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HutangPelanggan->sum_nominal_hutang_total_bayar()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HutangPelanggan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-09 22:20:46 --> Undefined index: hutang_nominal
+in APPPATH\Controllers\HutangPelanggan.php on line 510.
+ 1 APPPATH\Controllers\HutangPelanggan.php(510): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: hutang_nominal', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\HutangPelanggan.php', 510, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HutangPelanggan->sum_nominal_hutang_total_bayar()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HutangPelanggan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-09 22:27:47 --> Undefined index: hutang_nominal
+in APPPATH\Controllers\HutangPelanggan.php on line 516.
+ 1 APPPATH\Controllers\HutangPelanggan.php(516): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: hutang_nominal', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\HutangPelanggan.php', 516, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HutangPelanggan->sum_nominal_hutang_total_bayar()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HutangPelanggan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-09 22:40:51 --> Undefined index: hutang_nominal
+in APPPATH\Controllers\HutangPelanggan.php on line 517.
+ 1 APPPATH\Controllers\HutangPelanggan.php(517): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: hutang_nominal', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\HutangPelanggan.php', 517, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HutangPelanggan->sum_nominal_hutang_total_bayar()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HutangPelanggan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-09 22:41:11 --> Undefined index: hutang_nominal
+in APPPATH\Controllers\HutangPelanggan.php on line 517.
+ 1 APPPATH\Controllers\HutangPelanggan.php(517): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: hutang_nominal', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\HutangPelanggan.php', 517, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HutangPelanggan->sum_nominal_hutang_total_bayar()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HutangPelanggan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-09 22:44:03 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\HutangPelanggan.php on line 148.
+ 1 APPPATH\Controllers\HutangPelanggan.php(148): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\HutangPelanggan.php', 148, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HutangPelanggan->getDataHutangPelanggan()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HutangPelanggan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-09 22:44:08 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\HutangPelanggan.php on line 148.
+ 1 APPPATH\Controllers\HutangPelanggan.php(148): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\HutangPelanggan.php', 148, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HutangPelanggan->getDataHutangPelanggan()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HutangPelanggan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

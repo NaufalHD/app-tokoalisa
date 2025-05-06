@@ -1,0 +1,29 @@
+The reason why the confirmation prompt "Yakin proses transaksi KASUS ini?" is still being run right after the first confirmation prompt "Ajukan hutang pada pelanggan baru?" is because both of them are inside the same if statement.
+
+The 'shown.bs.modal' event handler that you attached to the '#modal-tambah-pelanggan' element only ensures that the event handler function is executed after the modal is shown, but it does not affect the order in which the if statements are executed.
+
+To achieve the behavior you want (i.e. show the modal, wait for the user to submit the form, and then run the second confirmation prompt), you need to move the second confirmation prompt into a separate function, and call that function only after the user has submitted the form in the modal. Here's an example:
+
+if (confirm('Ajukan hutang pada pelanggan baru ?')) {
+$('#modal-tambah-pelanggan').modal('show')
+isPelangganBaruHutang = true
+
+// Remove the click event handler from the #tambah-pelanggan button
+$('#tambah-pelanggan').off('click').on('click', function(e) {
+e.preventDefault();
+
+    // Run the second confirmation prompt after the form is submitted
+    confirmTransaksiKasus();
+
+});
+}
+
+function confirmTransaksiKasus() {
+if (confirm('Yakin proses transaksi KASUS ini ?')) {
+$.ajax({
+// your AJAX request code here
+})
+}
+}
+
+In this example, we removed the click event handler from the '#tambah-pelanggan' button and attached it again inside the 'shown.bs.modal' event handler, to make sure that it's only executed after the modal is shown. Then we defined a separate function confirmTransaksiKasus to handle the second confirmation prompt, and called that function only after the user has submitted the form in the modal.

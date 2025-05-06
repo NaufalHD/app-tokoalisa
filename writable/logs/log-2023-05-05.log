@@ -1,0 +1,97 @@
+CRITICAL - 2023-05-05 16:17:24 --> whereIn() expects $values to be of type array or closure
+in SYSTEMPATH\Database\BaseBuilder.php on line 940.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(827): CodeIgniter\Database\BaseBuilder->_whereIn('user_id', null, false, 'AND ', null)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->whereIn('user_id', null)
+ 3 APPPATH\Controllers\Admin.php(261): CodeIgniter\Model->__call('whereIn', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->edit()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 16:20:58 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin.php on line 266.
+ 1 APPPATH\Controllers\Admin.php(266): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\Admin.php', 266, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 16:27:03 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin.php on line 266.
+ 1 APPPATH\Controllers\Admin.php(266): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\Admin.php', 266, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 20:15:13 --> Cannot use object of type App\Models\OmzetHarianModel as array
+in APPPATH\Controllers\Transaksi.php on line 256.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaksi->prosesPembayaran()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 21:19:30 --> A non-numeric value encountered
+in APPPATH\Controllers\Transaksi.php on line 268.
+ 1 APPPATH\Controllers\Transaksi.php(268): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\Transaksi.php', 268, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaksi->prosesPembayaran()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 21:29:03 --> A non-numeric value encountered
+in APPPATH\Controllers\Transaksi.php on line 268.
+ 1 APPPATH\Controllers\Transaksi.php(268): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\Transaksi.php', 268, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaksi->prosesPembayaran()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 21:52:29 --> A non-numeric value encountered
+in APPPATH\Controllers\Transaksi.php on line 268.
+ 1 APPPATH\Controllers\Transaksi.php(268): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\Transaksi.php', 268, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaksi->prosesPembayaran()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 21:53:00 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::row()
+in APPPATH\Controllers\Transaksi.php on line 271.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaksi->prosesPembayaran()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 21:53:37 --> A non-numeric value encountered
+in APPPATH\Controllers\Transaksi.php on line 272.
+ 1 APPPATH\Controllers\Transaksi.php(272): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\Transaksi.php', 272, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaksi->prosesPembayaran()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 21:55:54 --> A non-numeric value encountered
+in APPPATH\Controllers\Transaksi.php on line 272.
+ 1 APPPATH\Controllers\Transaksi.php(272): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\Transaksi.php', 272, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaksi->prosesPembayaran()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 22:00:31 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::row()
+in APPPATH\Controllers\Transaksi.php on line 275.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaksi->prosesPembayaran()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 22:02:44 --> A non-numeric value encountered
+in APPPATH\Controllers\Transaksi.php on line 273.
+ 1 APPPATH\Controllers\Transaksi.php(273): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\Transaksi.php', 273, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaksi->prosesPembayaran()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 22:04:44 --> A non-numeric value encountered
+in APPPATH\Controllers\Transaksi.php on line 273.
+ 1 APPPATH\Controllers\Transaksi.php(273): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\Transaksi.php', 273, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaksi->prosesPembayaran()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 22:06:55 --> A non-numeric value encountered
+in APPPATH\Controllers\Transaksi.php on line 273.
+ 1 APPPATH\Controllers\Transaksi.php(273): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\Transaksi.php', 273, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaksi->prosesPembayaran()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

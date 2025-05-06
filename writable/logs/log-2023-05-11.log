@@ -1,0 +1,84 @@
+CRITICAL - 2023-05-11 21:40:59 --> syntax error, unexpected '$ops' (T_VARIABLE)
+in APPPATH\Controllers\HutangPelanggan.php on line 127.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\HutangPelanggan.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\HutangPelanggan')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\HutangPelanggan')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\HutangPelanggan')
+ 5 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\HutangPelanggan', true)
+ 6 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 21:41:38 --> Undefined variable: pelangganHutang
+in APPPATH\Controllers\HutangPelanggan.php on line 163.
+ 1 APPPATH\Controllers\HutangPelanggan.php(163): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pelangganHutang', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\HutangPelanggan.php', 163, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HutangPelanggan->getDataHutangPelanggan()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HutangPelanggan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 21:44:12 --> Undefined variable: pelangganHutang
+in APPPATH\Controllers\HutangPelanggan.php on line 164.
+ 1 APPPATH\Controllers\HutangPelanggan.php(164): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pelangganHutang', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\HutangPelanggan.php', 164, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HutangPelanggan->getDataHutangPelanggan()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HutangPelanggan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 21:47:20 --> Undefined variable: nama_pelanggan_hutang
+in APPPATH\Controllers\HutangPelanggan.php on line 138.
+ 1 APPPATH\Controllers\HutangPelanggan.php(138): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: nama_pelanggan_hutang', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\HutangPelanggan.php', 138, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HutangPelanggan->getDataHutangPelanggan()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HutangPelanggan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 21:58:01 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\HutangPelanggan.php on line 138.
+ 1 APPPATH\Controllers\HutangPelanggan.php(138): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\HutangPelanggan.php', 138, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HutangPelanggan->getDataHutangPelanggan()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HutangPelanggan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 22:06:33 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\HutangPelanggan.php on line 126.
+ 1 APPPATH\Controllers\HutangPelanggan.php(126): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\HutangPelanggan.php', 126, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HutangPelanggan->getDataHutangPelanggan()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HutangPelanggan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 22:07:33 --> Undefined property: stdClass::$pelanggan_nama
+in APPPATH\Controllers\HutangPelanggan.php on line 123.
+ 1 APPPATH\Controllers\HutangPelanggan.php(123): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$pelanggan_nama', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\HutangPelanggan.php', 123, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HutangPelanggan->getDataHutangPelanggan()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HutangPelanggan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 22:08:33 --> Undefined property: stdClass::$pelanggan_nama
+in APPPATH\Controllers\HutangPelanggan.php on line 123.
+ 1 APPPATH\Controllers\HutangPelanggan.php(123): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$pelanggan_nama', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\HutangPelanggan.php', 123, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HutangPelanggan->getDataHutangPelanggan()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HutangPelanggan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 22:11:14 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\HutangPelanggan.php on line 142.
+ 1 APPPATH\Controllers\HutangPelanggan.php(142): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\HutangPelanggan.php', 142, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HutangPelanggan->getDataHutangPelanggan()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HutangPelanggan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 22:11:59 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 391.
+ 1 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\HutangPelanggan.php(342): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HutangPelanggan->edit()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HutangPelanggan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 22:12:02 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 391.
+ 1 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\HutangPelanggan.php(342): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HutangPelanggan->edit()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HutangPelanggan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

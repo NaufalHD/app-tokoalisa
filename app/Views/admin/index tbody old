@@ -1,0 +1,23 @@
+<tbody>
+    <?php foreach ($data_row as $u) : ?>
+        <tr>
+            <td><?= $u['user_id']; ?></td>
+            <td><?= $u['user_name']; ?></td>
+            <td><?= $u['user_isowner']; ?></td>
+            <td>
+                <form action="/admin/edit/<?= $u['user_id']; ?>" method="get" class="d-inline">
+                    <?= csrf_field(); ?>
+                    <input type="hidden" name="_method" value="post">
+                    <button type="submit" class="btn btn-primary">Edit</button>
+                </form>
+            </td>
+            <td>
+                <form action="/admin/<?= $u['user_id']; ?>" method="post" class="d-inline">
+                    <?= csrf_field(); ?>
+                    <input type="hidden" name="_method" value="delete">
+                    <button type="submit" class="btn btn-danger" onclick="return confirm('apakah anda yakin?')">Delete</button>
+                </form>
+            </td>
+        </tr>
+    <?php endforeach; ?>
+</tbody>

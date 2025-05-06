@@ -1,0 +1,33 @@
+CRITICAL - 2023-04-14 14:25:08 --> Cannot use object of type stdClass as array
+in APPPATH\Views\pelanggan\index.php on line 79.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pelanggan/index', [], true)
+ 4 APPPATH\Controllers\Pelanggan.php(26): view('pelanggan/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pelanggan->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-14 14:33:12 --> Undefined variable: item
+in APPPATH\Views\pelanggan\index.php on line 82.
+ 1 APPPATH\Views\pelanggan\index.php(82): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: item', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Views\\pelanggan\\index.php', 82, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\tokoklontong\\app\\Views\\pelanggan\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pelanggan/index', [], true)
+ 5 APPPATH\Controllers\Pelanggan.php(26): view('pelanggan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pelanggan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-14 14:52:39 --> syntax error, unexpected 'getCartData' (T_STRING)
+in APPPATH\Config\Routes.php on line 132.
+ 1 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-14 14:53:45 --> syntax error, unexpected 'getCartData' (T_STRING)
+in APPPATH\Config\Routes.php on line 132.
+ 1 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

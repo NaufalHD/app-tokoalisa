@@ -1,0 +1,496 @@
+ERROR - 2023-04-24 13:42:58 --> mysqli_sql_exception: Unknown column 'pelanggan.id' in 'where clause' in C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `pelangg...', 0)
+#1 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `pelangg...')
+#2 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `pelangg...')
+#3 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `pelangg...', Array, false)
+#4 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\tokoklontong\app\Controllers\Pelanggan.php(249): CodeIgniter\Model->update('', Array)
+#8 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Pelanggan->edit()
+#9 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+#10 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\tokoklontong\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-04-24 13:42:58 --> Unknown column 'pelanggan.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `pelanggan` SET `pelanggan_nama` = \'\', `pelanggan_telp` = \'\', `pelanggan_alamat` = \'\', `pelanggan_catatan` = NULL, `updated_at` = \'2023-04-24 13:42:58\'
+WHERE `pelanggan`.`id` IN (\'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `pelanggan` SET `pelanggan_nama` = \'\', `pelanggan_telp` = \'\', `pelanggan_alamat` = \'\', `pelanggan_catatan` = NULL, `updated_at` = \'2023-04-24 13:42:58\'
+WHERE `pelanggan`.`id` IN (\'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `pelanggan` SET `pelanggan_nama` = \'\', `pelanggan_telp` = \'\', `pelanggan_alamat` = \'\', `pelanggan_catatan` = NULL, `updated_at` = \'2023-04-24 13:42:58\'
+WHERE `pelanggan`.`id` IN (\'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `pelanggan` SET `pelanggan_nama` = :pelanggan_nama:, `pelanggan_telp` = :pelanggan_telp:, `pelanggan_alamat` = :pelanggan_alamat:, `pelanggan_catatan` = :pelanggan_catatan:, `updated_at` = :updated_at:
+WHERE `pelanggan`.`id` IN :pelanggan.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\Pelanggan.php(249): CodeIgniter\Model->update('', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pelanggan->edit()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-24 13:44:30 --> mysqli_sql_exception: Unknown column 'pelanggan.id' in 'where clause' in C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `pelangg...', 0)
+#1 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `pelangg...')
+#2 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `pelangg...')
+#3 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `pelangg...', Array, false)
+#4 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\tokoklontong\app\Controllers\Pelanggan.php(249): CodeIgniter\Model->update('', Array)
+#8 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Pelanggan->edit()
+#9 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+#10 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\tokoklontong\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-04-24 13:44:30 --> Unknown column 'pelanggan.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `pelanggan` SET `pelanggan_nama` = \'\', `pelanggan_telp` = \'\', `pelanggan_alamat` = \'sdfrgthj\', `pelanggan_catatan` = \'wert\', `updated_at` = \'2023-04-24 13:44:30\'
+WHERE `pelanggan`.`id` IN (\'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `pelanggan` SET `pelanggan_nama` = \'\', `pelanggan_telp` = \'\', `pelanggan_alamat` = \'sdfrgthj\', `pelanggan_catatan` = \'wert\', `updated_at` = \'2023-04-24 13:44:30\'
+WHERE `pelanggan`.`id` IN (\'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `pelanggan` SET `pelanggan_nama` = \'\', `pelanggan_telp` = \'\', `pelanggan_alamat` = \'sdfrgthj\', `pelanggan_catatan` = \'wert\', `updated_at` = \'2023-04-24 13:44:30\'
+WHERE `pelanggan`.`id` IN (\'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `pelanggan` SET `pelanggan_nama` = :pelanggan_nama:, `pelanggan_telp` = :pelanggan_telp:, `pelanggan_alamat` = :pelanggan_alamat:, `pelanggan_catatan` = :pelanggan_catatan:, `updated_at` = :updated_at:
+WHERE `pelanggan`.`id` IN :pelanggan.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\Pelanggan.php(249): CodeIgniter\Model->update('', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pelanggan->edit()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-24 13:46:42 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 391.
+ 1 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Pelanggan.php(249): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pelanggan->edit()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-24 13:49:11 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 391.
+ 1 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Pelanggan.php(249): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pelanggan->edit()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-24 13:59:52 --> mysqli_sql_exception: Unknown column 'pelanggan.id' in 'where clause' in C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `pelangg...', 0)
+#1 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `pelangg...')
+#2 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `pelangg...')
+#3 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `pelangg...', Array, false)
+#4 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\tokoklontong\app\Controllers\Pelanggan.php(249): CodeIgniter\Model->update('21', Array)
+#8 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Pelanggan->edit()
+#9 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+#10 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\tokoklontong\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-04-24 13:59:52 --> Unknown column 'pelanggan.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `pelanggan` SET `pelanggan_nama` = \'sdertyudertyui\', `pelanggan_telp` = \'dergtu\', `pelanggan_alamat` = \'\', `pelanggan_catatan` = \'\', `updated_at` = \'2023-04-24 13:59:52\'
+WHERE `pelanggan`.`id` IN (\'21\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `pelanggan` SET `pelanggan_nama` = \'sdertyudertyui\', `pelanggan_telp` = \'dergtu\', `pelanggan_alamat` = \'\', `pelanggan_catatan` = \'\', `updated_at` = \'2023-04-24 13:59:52\'
+WHERE `pelanggan`.`id` IN (\'21\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `pelanggan` SET `pelanggan_nama` = \'sdertyudertyui\', `pelanggan_telp` = \'dergtu\', `pelanggan_alamat` = \'\', `pelanggan_catatan` = \'\', `updated_at` = \'2023-04-24 13:59:52\'
+WHERE `pelanggan`.`id` IN (\'21\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `pelanggan` SET `pelanggan_nama` = :pelanggan_nama:, `pelanggan_telp` = :pelanggan_telp:, `pelanggan_alamat` = :pelanggan_alamat:, `pelanggan_catatan` = :pelanggan_catatan:, `updated_at` = :updated_at:
+WHERE `pelanggan`.`id` IN :pelanggan.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\Pelanggan.php(249): CodeIgniter\Model->update('21', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pelanggan->edit()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-24 19:54:49 --> mysqli_sql_exception: Unknown column 'pelanggan.id' in 'where clause' in C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `pelangg...', 0)
+#1 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `pelangg...')
+#2 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `pelangg...')
+#3 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `pelangg...', Array, false)
+#4 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\tokoklontong\app\Controllers\Pelanggan.php(249): CodeIgniter\Model->update('32', Array)
+#8 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Pelanggan->edit()
+#9 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+#10 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\tokoklontong\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-04-24 19:54:49 --> Unknown column 'pelanggan.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `pelanggan` SET `pelanggan_nama` = \'asus\', `pelanggan_telp` = \'83912\', `pelanggan_alamat` = \'bandung\', `pelanggan_catatan` = \'\', `updated_at` = \'2023-04-24 19:54:49\'
+WHERE `pelanggan`.`id` IN (\'32\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `pelanggan` SET `pelanggan_nama` = \'asus\', `pelanggan_telp` = \'83912\', `pelanggan_alamat` = \'bandung\', `pelanggan_catatan` = \'\', `updated_at` = \'2023-04-24 19:54:49\'
+WHERE `pelanggan`.`id` IN (\'32\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `pelanggan` SET `pelanggan_nama` = \'asus\', `pelanggan_telp` = \'83912\', `pelanggan_alamat` = \'bandung\', `pelanggan_catatan` = \'\', `updated_at` = \'2023-04-24 19:54:49\'
+WHERE `pelanggan`.`id` IN (\'32\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `pelanggan` SET `pelanggan_nama` = :pelanggan_nama:, `pelanggan_telp` = :pelanggan_telp:, `pelanggan_alamat` = :pelanggan_alamat:, `pelanggan_catatan` = :pelanggan_catatan:, `updated_at` = :updated_at:
+WHERE `pelanggan`.`id` IN :pelanggan.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\Pelanggan.php(249): CodeIgniter\Model->update('32', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pelanggan->edit()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-24 19:59:46 --> whereIn() expects $values to be of type array or closure
+in SYSTEMPATH\Database\BaseBuilder.php on line 940.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(827): CodeIgniter\Database\BaseBuilder->_whereIn('pelanggan_id', '32', false, 'AND ', null)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->whereIn('pelanggan_id', '32')
+ 3 APPPATH\Controllers\Pelanggan.php(258): CodeIgniter\Model->__call('whereIn', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pelanggan->edit()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-24 20:05:02 --> whereIn() expects $values to be of type array or closure
+in SYSTEMPATH\Database\BaseBuilder.php on line 940.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(827): CodeIgniter\Database\BaseBuilder->_whereIn('pelanggan_id', '32', false, 'AND ', null)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->whereIn('pelanggan_id', '32')
+ 3 APPPATH\Controllers\Pelanggan.php(258): CodeIgniter\Model->__call('whereIn', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pelanggan->edit()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-24 20:25:58 --> whereIn() expects $values to be of type array or closure
+in SYSTEMPATH\Database\BaseBuilder.php on line 940.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(827): CodeIgniter\Database\BaseBuilder->_whereIn('pelanggan_id', null, false, 'AND ', null)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->whereIn('pelanggan_id', null)
+ 3 APPPATH\Controllers\Pelanggan.php(258): CodeIgniter\Model->__call('whereIn', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pelanggan->edit()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-24 20:27:51 --> whereIn() expects $values to be of type array or closure
+in SYSTEMPATH\Database\BaseBuilder.php on line 940.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(827): CodeIgniter\Database\BaseBuilder->_whereIn('pelanggan_id', '32', false, 'AND ', null)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->whereIn('pelanggan_id', '32')
+ 3 APPPATH\Controllers\Pelanggan.php(260): CodeIgniter\Model->__call('whereIn', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pelanggan->edit()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-24 20:31:09 --> whereIn() expects $values to be of type array or closure
+in SYSTEMPATH\Database\BaseBuilder.php on line 940.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(827): CodeIgniter\Database\BaseBuilder->_whereIn('pelanggan_id', '32', false, 'AND ', null)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->whereIn('pelanggan_id', '32')
+ 3 APPPATH\Controllers\Pelanggan.php(261): CodeIgniter\Model->__call('whereIn', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pelanggan->edit()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-24 20:31:15 --> whereIn() expects $values to be of type array or closure
+in SYSTEMPATH\Database\BaseBuilder.php on line 940.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(827): CodeIgniter\Database\BaseBuilder->_whereIn('pelanggan_id', '32', false, 'AND ', null)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->whereIn('pelanggan_id', '32')
+ 3 APPPATH\Controllers\Pelanggan.php(261): CodeIgniter\Model->__call('whereIn', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pelanggan->edit()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-24 20:31:47 --> whereIn() expects $values to be of type array or closure
+in SYSTEMPATH\Database\BaseBuilder.php on line 940.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(827): CodeIgniter\Database\BaseBuilder->_whereIn('pelanggan_id', '32', false, 'AND ', null)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->whereIn('pelanggan_id', '32')
+ 3 APPPATH\Controllers\Pelanggan.php(261): CodeIgniter\Model->__call('whereIn', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pelanggan->edit()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-24 20:39:04 --> mysqli_sql_exception: Unknown column 'pelanggan.id' in 'where clause' in C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `pelangg...', 0)
+#1 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `pelangg...')
+#2 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `pelangg...')
+#3 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `pelangg...', Array, false)
+#4 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\tokoklontong\app\Controllers\Pelanggan.php(256): CodeIgniter\Model->update('32', Array)
+#8 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Pelanggan->edit()
+#9 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+#10 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\tokoklontong\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-04-24 20:39:04 --> Unknown column 'pelanggan.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `pelanggan` SET `pelanggan_nama` = \'asus\', `pelanggan_telp` = \'83912\', `pelanggan_alamat` = \'banwertyu\', `pelanggan_catatan` = \'\', `updated_at` = \'2023-04-24 20:39:04\'
+WHERE `pelanggan`.`id` IN (\'32\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `pelanggan` SET `pelanggan_nama` = \'asus\', `pelanggan_telp` = \'83912\', `pelanggan_alamat` = \'banwertyu\', `pelanggan_catatan` = \'\', `updated_at` = \'2023-04-24 20:39:04\'
+WHERE `pelanggan`.`id` IN (\'32\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `pelanggan` SET `pelanggan_nama` = \'asus\', `pelanggan_telp` = \'83912\', `pelanggan_alamat` = \'banwertyu\', `pelanggan_catatan` = \'\', `updated_at` = \'2023-04-24 20:39:04\'
+WHERE `pelanggan`.`id` IN (\'32\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `pelanggan` SET `pelanggan_nama` = :pelanggan_nama:, `pelanggan_telp` = :pelanggan_telp:, `pelanggan_alamat` = :pelanggan_alamat:, `pelanggan_catatan` = :pelanggan_catatan:, `updated_at` = :updated_at:
+WHERE `pelanggan`.`id` IN :pelanggan.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\Pelanggan.php(256): CodeIgniter\Model->update('32', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pelanggan->edit()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-24 20:46:07 --> Return value of CodeIgniter\BaseModel::transformDataToArray() must be of the type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1706.
+ 1 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray('32', 'update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], '32')
+ 3 APPPATH\Controllers\Pelanggan.php(257): CodeIgniter\Model->update('pelanggan_id', '32')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pelanggan->edit()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-24 20:50:15 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Pelanggan.php(257): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pelanggan->edit()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-24 20:51:50 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Pelanggan.php(257): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pelanggan->edit()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-24 20:57:38 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Pelanggan.php(263): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pelanggan->edit()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-24 20:58:32 --> mysqli_sql_exception: Unknown column 'pelanggan.id' in 'where clause' in C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `pelangg...', 0)
+#1 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `pelangg...')
+#2 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `pelangg...')
+#3 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `pelangg...', Array, false)
+#4 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\tokoklontong\app\Controllers\Pelanggan.php(263): CodeIgniter\Model->update('32', Array)
+#8 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Pelanggan->edit()
+#9 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+#10 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\tokoklontong\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-04-24 20:58:32 --> Unknown column 'pelanggan.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `pelanggan` SET `pelanggan_nama` = \'joko\', `pelanggan_telp` = \'29\', `pelanggan_alamat` = \'joko\', `pelanggan_catatan` = \'\', `updated_at` = \'2023-04-24 20:58:32\'
+WHERE `pelanggan`.`id` IN (\'32\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `pelanggan` SET `pelanggan_nama` = \'joko\', `pelanggan_telp` = \'29\', `pelanggan_alamat` = \'joko\', `pelanggan_catatan` = \'\', `updated_at` = \'2023-04-24 20:58:32\'
+WHERE `pelanggan`.`id` IN (\'32\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `pelanggan` SET `pelanggan_nama` = \'joko\', `pelanggan_telp` = \'29\', `pelanggan_alamat` = \'joko\', `pelanggan_catatan` = \'\', `updated_at` = \'2023-04-24 20:58:32\'
+WHERE `pelanggan`.`id` IN (\'32\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `pelanggan` SET `pelanggan_nama` = :pelanggan_nama:, `pelanggan_telp` = :pelanggan_telp:, `pelanggan_alamat` = :pelanggan_alamat:, `pelanggan_catatan` = :pelanggan_catatan:, `updated_at` = :updated_at:
+WHERE `pelanggan`.`id` IN :pelanggan.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\Pelanggan.php(263): CodeIgniter\Model->update('32', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pelanggan->edit()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-24 21:01:23 --> mysqli_sql_exception: Unknown column 'pelanggan.id' in 'where clause' in C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `pelangg...', 0)
+#1 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `pelangg...')
+#2 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `pelangg...')
+#3 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `pelangg...', Array, false)
+#4 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\tokoklontong\app\Controllers\Pelanggan.php(265): CodeIgniter\Model->update('pelanggan_id', Array)
+#8 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Pelanggan->edit()
+#9 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+#10 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\tokoklontong\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-04-24 21:01:23 --> Unknown column 'pelanggan.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `pelanggan` SET `pelanggan_nama` = \'asus\', `pelanggan_telp` = \'71\', `pelanggan_alamat` = \'joko\', `pelanggan_catatan` = \'\', `updated_at` = \'2023-04-24 21:01:23\'
+WHERE `pelanggan`.`id` IN (\'pelanggan_id\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `pelanggan` SET `pelanggan_nama` = \'asus\', `pelanggan_telp` = \'71\', `pelanggan_alamat` = \'joko\', `pelanggan_catatan` = \'\', `updated_at` = \'2023-04-24 21:01:23\'
+WHERE `pelanggan`.`id` IN (\'pelanggan_id\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `pelanggan` SET `pelanggan_nama` = \'asus\', `pelanggan_telp` = \'71\', `pelanggan_alamat` = \'joko\', `pelanggan_catatan` = \'\', `updated_at` = \'2023-04-24 21:01:23\'
+WHERE `pelanggan`.`id` IN (\'pelanggan_id\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `pelanggan` SET `pelanggan_nama` = :pelanggan_nama:, `pelanggan_telp` = :pelanggan_telp:, `pelanggan_alamat` = :pelanggan_alamat:, `pelanggan_catatan` = :pelanggan_catatan:, `updated_at` = :updated_at:
+WHERE `pelanggan`.`id` IN :pelanggan.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\Pelanggan.php(265): CodeIgniter\Model->update('pelanggan_id', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pelanggan->edit()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-24 21:01:57 --> mysqli_sql_exception: Unknown column 'pelanggan.id' in 'where clause' in C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `pelangg...', 0)
+#1 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `pelangg...')
+#2 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `pelangg...')
+#3 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `pelangg...', Array, false)
+#4 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\tokoklontong\app\Controllers\Pelanggan.php(265): CodeIgniter\Model->update('bij', Array)
+#8 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Pelanggan->edit()
+#9 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+#10 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\tokoklontong\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-04-24 21:01:57 --> Unknown column 'pelanggan.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `pelanggan` SET `pelanggan_nama` = \'asus\', `pelanggan_telp` = \'12\', `pelanggan_alamat` = \'joko\', `pelanggan_catatan` = \'\', `updated_at` = \'2023-04-24 21:01:57\'
+WHERE `pelanggan`.`id` IN (\'bij\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `pelanggan` SET `pelanggan_nama` = \'asus\', `pelanggan_telp` = \'12\', `pelanggan_alamat` = \'joko\', `pelanggan_catatan` = \'\', `updated_at` = \'2023-04-24 21:01:57\'
+WHERE `pelanggan`.`id` IN (\'bij\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `pelanggan` SET `pelanggan_nama` = \'asus\', `pelanggan_telp` = \'12\', `pelanggan_alamat` = \'joko\', `pelanggan_catatan` = \'\', `updated_at` = \'2023-04-24 21:01:57\'
+WHERE `pelanggan`.`id` IN (\'bij\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `pelanggan` SET `pelanggan_nama` = :pelanggan_nama:, `pelanggan_telp` = :pelanggan_telp:, `pelanggan_alamat` = :pelanggan_alamat:, `pelanggan_catatan` = :pelanggan_catatan:, `updated_at` = :updated_at:
+WHERE `pelanggan`.`id` IN :pelanggan.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\Pelanggan.php(265): CodeIgniter\Model->update('bij', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pelanggan->edit()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-24 21:03:54 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Pelanggan.php(267): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pelanggan->edit()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-24 21:05:47 --> Return value of CodeIgniter\BaseModel::transformDataToArray() must be of the type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1706.
+ 1 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray('pelanggan_id=osidfj', 'update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], 'pelanggan_id=osidfj')
+ 3 APPPATH\Controllers\Pelanggan.php(267): CodeIgniter\Model->update([...], 'pelanggan_id=osidfj')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pelanggan->edit()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-24 21:06:32 --> Return value of CodeIgniter\BaseModel::transformDataToArray() must be of the type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1706.
+ 1 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray('pelanggan_id=osidfj', 'update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], 'pelanggan_id=osidfj')
+ 3 APPPATH\Controllers\Pelanggan.php(267): CodeIgniter\Model->update([...], 'pelanggan_id=osidfj')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pelanggan->edit()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-24 21:06:39 --> Return value of CodeIgniter\BaseModel::transformDataToArray() must be of the type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1706.
+ 1 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray('pelanggan_id=osidfj', 'update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], 'pelanggan_id=osidfj')
+ 3 APPPATH\Controllers\Pelanggan.php(267): CodeIgniter\Model->update([...], 'pelanggan_id=osidfj')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pelanggan->edit()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-24 21:08:50 --> mysqli_sql_exception: Unknown column 'pelanggan.id' in 'where clause' in C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `pelangg...', 0)
+#1 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `pelangg...')
+#2 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `pelangg...')
+#3 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `pelangg...', Array, false)
+#4 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\tokoklontong\app\Controllers\Pelanggan.php(264): CodeIgniter\Model->update('32', Array)
+#8 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Pelanggan->edit()
+#9 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+#10 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\tokoklontong\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-04-24 21:08:50 --> Unknown column 'pelanggan.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `pelanggan` SET `pelanggan_nama` = \'erty\', `pelanggan_telp` = \'11\', `pelanggan_alamat` = \'asd\', `pelanggan_catatan` = \'\', `updated_at` = \'2023-04-24 21:08:50\'
+WHERE `pelanggan`.`id` IN (\'32\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `pelanggan` SET `pelanggan_nama` = \'erty\', `pelanggan_telp` = \'11\', `pelanggan_alamat` = \'asd\', `pelanggan_catatan` = \'\', `updated_at` = \'2023-04-24 21:08:50\'
+WHERE `pelanggan`.`id` IN (\'32\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `pelanggan` SET `pelanggan_nama` = \'erty\', `pelanggan_telp` = \'11\', `pelanggan_alamat` = \'asd\', `pelanggan_catatan` = \'\', `updated_at` = \'2023-04-24 21:08:50\'
+WHERE `pelanggan`.`id` IN (\'32\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `pelanggan` SET `pelanggan_nama` = :pelanggan_nama:, `pelanggan_telp` = :pelanggan_telp:, `pelanggan_alamat` = :pelanggan_alamat:, `pelanggan_catatan` = :pelanggan_catatan:, `updated_at` = :updated_at:
+WHERE `pelanggan`.`id` IN :pelanggan.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\Pelanggan.php(264): CodeIgniter\Model->update('32', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pelanggan->edit()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-24 21:08:53 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 391.
+ 1 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Pelanggan.php(264): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pelanggan->edit()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-24 21:12:30 --> mysqli_sql_exception: Unknown column 'pelanggan.id' in 'where clause' in C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `pelangg...', 0)
+#1 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `pelangg...')
+#2 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `pelangg...')
+#3 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `pelangg...', Array, false)
+#4 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\tokoklontong\app\Controllers\Pelanggan.php(264): CodeIgniter\Model->update('32', Array)
+#8 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Pelanggan->edit()
+#9 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+#10 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\tokoklontong\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-04-24 21:12:30 --> Unknown column 'pelanggan.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `pelanggan` SET `pelanggan_nama` = \'asus\', `pelanggan_telp` = \'11\', `pelanggan_alamat` = \'joko\', `pelanggan_catatan` = \'\', `updated_at` = \'2023-04-24 21:12:30\'
+WHERE `pelanggan`.`id` IN (\'32\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `pelanggan` SET `pelanggan_nama` = \'asus\', `pelanggan_telp` = \'11\', `pelanggan_alamat` = \'joko\', `pelanggan_catatan` = \'\', `updated_at` = \'2023-04-24 21:12:30\'
+WHERE `pelanggan`.`id` IN (\'32\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `pelanggan` SET `pelanggan_nama` = \'asus\', `pelanggan_telp` = \'11\', `pelanggan_alamat` = \'joko\', `pelanggan_catatan` = \'\', `updated_at` = \'2023-04-24 21:12:30\'
+WHERE `pelanggan`.`id` IN (\'32\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `pelanggan` SET `pelanggan_nama` = :pelanggan_nama:, `pelanggan_telp` = :pelanggan_telp:, `pelanggan_alamat` = :pelanggan_alamat:, `pelanggan_catatan` = :pelanggan_catatan:, `updated_at` = :updated_at:
+WHERE `pelanggan`.`id` IN :pelanggan.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\Pelanggan.php(264): CodeIgniter\Model->update('32', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pelanggan->edit()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

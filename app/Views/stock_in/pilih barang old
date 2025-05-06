@@ -1,0 +1,27 @@
+<div class="form-group my-2">
+                                <table width="100%">
+                                    <tr>
+                                        <td style="vertical-align: center;  width:45%">
+                                            <!-- <td style="vertical-align: center;"> -->
+                                            <label for="barcode">Pilih Barang</label>
+                                        </td>
+                                        <!-- <td style="width:20%;"> -->
+                                        <td>
+                                            <div class="form-group input-group">
+                                                <input type="hidden" id="bstock_id">
+                                                <!-- <input type="hidden" id="stok_harga"> -->
+                                                <!-- <input type="hidden" id="stok_jumlah"> -->
+                                                <!-- <input type="hidden" id="qty_cart"> -->
+                                                <!-- <input type="text" id="barcode" class="form-control" autofocus> -->
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-info btn-flat show-btn" data-bs-toggle="modal" data-bs-target="#modal-item-barang">
+                                                        <span class="fas fa-search"></span>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                </table>
+
+                            </div>

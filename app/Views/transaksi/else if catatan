@@ -1,0 +1,47 @@
+else if (kembalian < 0 && ajukan_hutang == true && nm_kostumer == "Pelanggan") {
+            if (confirm('Ajukan hutang pada pelanggan baru ?')) {
+                isPelangganBaruHutang = true;
+                $('#modal-tambah-pelanggan').modal('show');
+                if (confirm('Yakin proses transaksi KASUS ini ?')) {
+                    // line percobaan agar modal diselesaikan dulu baru ajax jalan
+                    // $('#modal-tambah-pelanggan').on('shown.bs.modal', function() {
+                    $(document).on('click', '#tambah_pelanggan', function() {
+                            // $.ajax({
+                            //     type: 'POST',
+                            //     url: '<?= site_url('transaksi/prosesPembayaran') ?>',
+                            //     dataType: 'json',
+                            //     data: {
+                            //         'nm_kostumer': nm_kostumer,
+                            //         'nm_kostumer_id': nm_kostumer_id,
+                            //         'total_harga': total_harga,
+                            //         'diskon': diskon,
+                            //         'harga_final': harga_final,
+                            //         'tunai': tunai,
+                            //         'ajukan_hutang': ajukan_hutang,
+                            //         'kembalian': kembalian,
+                            //         'catatan': catatan,
+                            //         'date': date,
+                            //         'isPelangganHutang': isPelangganHutang
+                            //     },
+                            //     success: function(result) {
+                            //         if (result.success == true) {
+                            //             alert('Transaksi berhasil')
+                            //             alert('tempA: ' + JSON.stringify(result.tempA))
+                            //             // alert('tempB: ' + JSON.stringify(result.tempB))
+                            //             window.open('<?= site_url('transaksi/cetak/') ?>' + result.transaksi_id, '_blank')
+                            //         } else {
+                            //             alert('Transaksi gagal')
+                            //             alert('tempA: ' + JSON.stringify(result.tempA))
+                            //         }
+                            //         location.href = '<?= site_url('transaksi') ?>'
+                            //     }
+                            // })
+                    });
+                }
+            }
+
+            // alert('Jumlah uang tunai tidak mencukupi')
+            // $('#tunai').focus()
+            // } else if (1>0) {
+            // alert('bro')
+        }

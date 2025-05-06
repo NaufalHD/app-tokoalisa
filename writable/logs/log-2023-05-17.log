@@ -1,0 +1,27 @@
+CRITICAL - 2023-05-17 11:01:50 --> Undefined variable: item
+in APPPATH\Views\stock_in\index.php on line 340.
+ 1 APPPATH\Views\stock_in\index.php(340): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: item', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Views\\stock_in\\index.php', 340, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\tokoklontong\\app\\Views\\stock_in\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('stock_in/index', [], true)
+ 5 APPPATH\Controllers\StockIn.php(26): view('stock_in/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\StockIn->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StockIn))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 11:28:01 --> Call to undefined function rupiah()
+in APPPATH\Views\stock_in\index.php on line 346.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('stock_in/index', [], true)
+ 4 APPPATH\Controllers\StockIn.php(29): view('stock_in/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\StockIn->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StockIn))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 15:26:51 --> Call to a member function get() on null
+in APPPATH\Controllers\StockIn.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\StockIn->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StockIn))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

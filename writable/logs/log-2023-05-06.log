@@ -1,0 +1,147 @@
+CRITICAL - 2023-05-06 07:27:05 --> A non-numeric value encountered
+in APPPATH\Controllers\Transaksi.php on line 275.
+ 1 APPPATH\Controllers\Transaksi.php(275): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\Transaksi.php', 275, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaksi->prosesPembayaran()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 07:37:04 --> A non-numeric value encountered
+in APPPATH\Controllers\Transaksi.php on line 277.
+ 1 APPPATH\Controllers\Transaksi.php(277): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\Transaksi.php', 277, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaksi->prosesPembayaran()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 07:53:02 --> A non-numeric value encountered
+in APPPATH\Controllers\Transaksi.php on line 279.
+ 1 APPPATH\Controllers\Transaksi.php(279): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\Transaksi.php', 279, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaksi->prosesPembayaran()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 10:23:14 --> A non-numeric value encountered
+in APPPATH\Controllers\Transaksi.php on line 280.
+ 1 APPPATH\Controllers\Transaksi.php(280): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\Transaksi.php', 280, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaksi->prosesPembayaran()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 10:24:04 --> A non-numeric value encountered
+in APPPATH\Controllers\Transaksi.php on line 280.
+ 1 APPPATH\Controllers\Transaksi.php(280): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\Transaksi.php', 280, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaksi->prosesPembayaran()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 10:24:39 --> Array to string conversion
+in APPPATH\Controllers\Transaksi.php on line 280.
+ 1 APPPATH\Controllers\Transaksi.php(280): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\Transaksi.php', 280, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaksi->prosesPembayaran()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-06 10:28:22 --> mysqli_sql_exception: Illegal parameter data types int and row for operation '=' in C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `omzet_n...', 0)
+#1 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `omzet_n...')
+#2 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `omzet_n...')
+#3 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `omzet_n...', Array, false)
+#4 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\Model.php(203): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\BaseModel.php(557): CodeIgniter\Model->doFind(false, NULL)
+#6 C:\xampp\htdocs\tokoklontong\app\Controllers\Transaksi.php(279): CodeIgniter\BaseModel->find()
+#7 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Transaksi->prosesPembayaran()
+#8 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#9 C:\xampp\htdocs\tokoklontong\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tokoklontong\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-06 10:28:22 --> Illegal parameter data types int and row for operation '='
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `omzet_nominal`
+FROM `omzet_harian`
+WHERE `omzet_id` = (23,8,2)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `omzet_nominal`
+FROM `omzet_harian`
+WHERE `omzet_id` = (23,8,2)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `omzet_nominal`
+FROM `omzet_harian`
+WHERE `omzet_id` = (23,8,2)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `omzet_nominal`
+FROM `omzet_harian`
+WHERE `omzet_id` = :omzet_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(203): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(false, null)
+ 7 APPPATH\Controllers\Transaksi.php(279): CodeIgniter\BaseModel->find()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaksi->prosesPembayaran()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 13:01:10 --> Trying to get property 'omzet_nominal' of non-object
+in APPPATH\Controllers\Transaksi.php on line 285.
+ 1 APPPATH\Controllers\Transaksi.php(285): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'omzet_nominal\' of non-object', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\Transaksi.php', 285, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaksi->prosesPembayaran()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 13:10:38 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Transaksi.php on line 289.
+ 1 APPPATH\Controllers\Transaksi.php(289): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\Transaksi.php', 289, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaksi->prosesPembayaran()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 13:13:36 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Transaksi.php on line 289.
+ 1 APPPATH\Controllers\Transaksi.php(289): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\Transaksi.php', 289, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaksi->prosesPembayaran()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 13:16:39 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Transaksi.php on line 289.
+ 1 APPPATH\Controllers\Transaksi.php(289): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\Transaksi.php', 289, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaksi->prosesPembayaran()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 13:18:16 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Transaksi.php on line 289.
+ 1 APPPATH\Controllers\Transaksi.php(289): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\Transaksi.php', 289, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaksi->prosesPembayaran()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 13:18:53 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Transaksi.php on line 289.
+ 1 APPPATH\Controllers\Transaksi.php(289): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\Transaksi.php', 289, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaksi->prosesPembayaran()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 13:19:59 --> Undefined variable: k
+in APPPATH\Controllers\Transaksi.php on line 287.
+ 1 APPPATH\Controllers\Transaksi.php(287): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: k', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\Transaksi.php', 287, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaksi->prosesPembayaran()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 13:23:14 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Transaksi.php on line 290.
+ 1 APPPATH\Controllers\Transaksi.php(290): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\Transaksi.php', 290, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaksi->prosesPembayaran()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 13:24:15 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Transaksi.php on line 291.
+ 1 APPPATH\Controllers\Transaksi.php(291): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\Transaksi.php', 291, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaksi->prosesPembayaran()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 13:25:11 --> Undefined variable: omzet_nominal_old
+in APPPATH\Controllers\Transaksi.php on line 291.
+ 1 APPPATH\Controllers\Transaksi.php(291): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: omzet_nominal_old', 'C:\\xampp\\htdocs\\tokoklontong\\app\\Controllers\\Transaksi.php', 291, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaksi->prosesPembayaran()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

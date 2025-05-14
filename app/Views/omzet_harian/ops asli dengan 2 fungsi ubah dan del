@@ -1,0 +1,25 @@
+$ops =
+                '<button 
+                    id="update_omzet_harian" 
+                    data-bs-toggle="modal" 
+                    data-bs-target="#modal-edit-omzet-harian"
+
+                    data-omzet_id= "' . $value->omzet_id . '"
+
+                    data-omzet_date= "' . $value->omzet_date . '"
+                    data-omzet_nominal= "' . $value->omzet_nominal . '"
+                    data-omzet_catatan= "' . $value->omzet_catatan . '"
+
+                    class="btn btn-xs btn-primary">
+                    <i class="fas fa-pencil-alt" ></i> Ubah
+                </button>';
+
+            $ops .=
+                '<button 
+                    id="hapus_omzet_harian"
+
+                    data-omzet_id="' . $value->omzet_id . '" 
+                    
+                    class="btn btn-xs btn-danger">
+                    <i class="fas fa-trash"></i> Hapus
+                </button>';

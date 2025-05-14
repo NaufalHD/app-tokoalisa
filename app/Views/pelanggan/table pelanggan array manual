@@ -1,0 +1,189 @@
+
+<!-- dari mas jul dibawah ini -->
+$ops = '<a href="' . base_url('/pelanggan/edit/' . $value->pelanggan_id . '') . '" class="btn btn-xs btn-primary">
+    <i class="fas fa-pencil-alt"></i> Ubah</a>';
+
+
+    $ops .= ' <a href="' . base_url('/pelanggan/delete/' . $value->pelanggan_id . '') . '" class="btn btn-xs btn-primary">
+        <i class="fas fa-trash"></i> hapus</a>';
+
+
+    
+
+
+    <!-- pake dibawah ini bisa juga nihh -->
+    $ops = '<button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#modal-tambah-pelanggan">
+        Open Modal
+    </button>';
+
+
+    <!-- gak pakai ini -->
+    $(document).on('click', '#hapus_pelanggan', function() {
+
+        //kondisi jika nama pelanggan sudah diisi oleh user
+        $.ajax({
+            type: 'POST',
+            url: '<?= site_url('pelanggan/create') ?>',
+            data: {
+                'pelanggan_nama': pelanggan_nama,
+                'pelanggan_telp': pelanggan_telp,
+                'pelanggan_alamat': pelanggan_alamat,
+                'pelanggan_catatan': pelanggan_catatan,
+            },
+            dataType: 'json',
+            success: function(result) {
+                if (result.success) {
+                    $('#pelanggan_table').DataTable().ajax.reload(null, false).draw(false);
+                    // calculate();
+                    alert('Pelanggan baru berhasil ditambahkan')
+                    $('#modal-tambah-pelanggan').modal('hide')
+                } else {
+                    alert('Gagal menambahkan pelanggan')
+                    $('#modal-tambah-pelanggan').modal('hide')
+                }
+            }
+        })
+
+
+    })
+
+
+
+<div class="table-responsive">
+    <table class="table table-bordered table-striped" id="pelanggan_table" width="100%">
+        <thead>
+            <tr>
+                <th scope="col" width=1em>#</th>
+                <th scope="col" width=1em>ID</th>
+                <th scope="col">Nama</th>
+                <th scope="col">Telp</th>
+                <th scope="col">Alamat</th>
+                <th scope="col">Catatan</th>
+                <th scope="col">Aksi</th>
+            </tr>
+        </thead>
+
+        <!-- dibawah ini tbody utk data2 yang sifatnya object, seperti punya mas jul -->
+
+        <tbody>
+            <?php $no = 1;
+            foreach ($data_row as $data) { ?>
+                <tr>
+                    <td><?= $no++ ?></td>
+                    <td><?= $data->pelanggan_id ?></td>
+                    <td><?= $data->pelanggan_nama ?></td>
+                    <td><?= $data->pelanggan_telp ?></td>
+                    <td><?= $data->pelanggan_alamat ?></td>
+                    <td><?= $data->pelanggan_catatan ?></td>
+                    <td>
+                        <form action="/pelanggan/edit/<?= $data->pelanggan_id; ?>" method="get" class="d-inline">
+                            <?= csrf_field(); ?>
+                            <input type="hidden" name="_method" value="post">
+                            <button type="submit" class="btn btn-primary">Edit</button>
+                        </form>
+                        <form action="/pelanggan/<?= $data->pelanggan_id; ?>" method="post" class="d-inline">
+                            <?= csrf_field(); ?>
+                            <input type="hidden" name="_method" value="delete">
+                            <button type="submit" class="btn btn-danger" onclick="return confirm('apakah anda yakin?')">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            <?php } ?>
+        </tbody>
+    </table>
+</div>
+
+<!-- tempat table manual -->
+<div class="table-responsive">
+    <table class="table table-bordered table-striped" id="pelanggan_table" width="100%">
+        <thead>
+            <tr>
+                <th scope="col" width=1em>#</th>
+                <th scope="col" width=1em>ID</th>
+                <th scope="col">Nama</th>
+                <th scope="col">Telp</th>
+                <th scope="col">Alamat</th>
+                <th scope="col">Catatan</th>
+                <th scope="col">Aksi</th>
+            </tr>
+        </thead>
+
+        <!-- dibawah ini tbody utk data2 yang sifatnya object, seperti punya mas jul -->
+
+        <tbody>
+            <?php $no = 1;
+            foreach ($data_row as $data) { ?>
+                <tr>
+                    <td><?= $no++ ?></td>
+                    <td><?= $data->pelanggan_id ?></td>
+                    <td><?= $data->pelanggan_nama ?></td>
+                    <td><?= $data->pelanggan_telp ?></td>
+                    <td><?= $data->pelanggan_alamat ?></td>
+                    <td><?= $data->pelanggan_catatan ?></td>
+                    <td>
+                        <form action="/pelanggan/edit/<?= $data->pelanggan_id; ?>" method="get" class="d-inline">
+                            <?= csrf_field(); ?>
+                            <input type="hidden" name="_method" value="post">
+                            <button type="submit" class="btn btn-primary">Edit</button>
+                        </form>
+                        <form action="/pelanggan/<?= $data->pelanggan_id; ?>" method="post" class="d-inline">
+                            <?= csrf_field(); ?>
+                            <input type="hidden" name="_method" value="delete">
+                            <button type="submit" class="btn btn-danger" onclick="return confirm('apakah anda yakin?')">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            <?php } ?>
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<?= $this->section("pageScript") ?>
+
+
+<script>
+    //fitur untuk tambah pelanggan baru
+    $(document).on('click', '#tambah_pelanggan', function() {
+        var pelanggan_nama = $('#pelanggan_nama').val()
+        var pelanggan_telp = $('#pelanggan_telp').val()
+        var pelanggan_alamat = $('#pelanggan_alamat').val()
+        var pelanggan_catatan = $('#pelanggan_catatan').val()
+
+        // if ( harga == '' || harga == 0) {
+        //     alert('Harga tidak boleh kosong')
+        //     $('#harga_item').focus()
+        // } else if (qty == '' || qty < 1) {
+        //     alert('Qty tidak boleh kosong')
+        //     $('#qty_item').focus();
+        // } else if (parseInt(qty) > parseInt(stock)) {
+        //     alert("Stok tidak mencukupi")
+        //     $('#qty_item').focus();
+        // } else {
+        $.ajax({
+            type: 'POST',
+            url: '<?= site_url('pelanggan/create') ?>',
+            data: {
+                'pelanggan_nama': pelanggan_nama,
+                'pelanggan_telp': pelanggan_telp,
+                'pelanggan_alamat': pelanggan_alamat,
+                'pelanggan_catatan': pelanggan_catatan,
+            },
+            dataType: 'json',
+            success: function(result) {
+                if (result.success) {
+                    $('#pelanggan_table').DataTable().ajax.reload(null, false).draw(false);
+                    calculate();
+                    alert('Pelanggan baru berhasil ditambahkan')
+                    $('#modal-tambah-pelanggan').modal('hide')
+                } else {
+                    alert('Gagal menambahkan pelanggan')
+                    $('#modal-tambah-pelanggan').modal('hide')
+                }
+            }
+        })
+    })
+</script>

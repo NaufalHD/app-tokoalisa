@@ -1,0 +1,49 @@
+ <!-- Modal detail transaksi -->
+            <div class="modal fade" id="modal-lihat-transaksi">
+                <div class="modal-dialog modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-tittle">Detail Transaksi</h4>
+                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <table class="table table-bordered" id="table_detail_transaksi" width="100%">
+                                <tr>
+                                    <td width="20%" class="fw-semibold">Invoice</td>
+                                    <td id="detail_stock_in_date"> </td>
+                                    <td width="20%" class="fw-semibold">Pelanggan</td>
+                                    <td id="detail_stock_in_date"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-semibold">Barcode</td>
+                                    <td id="detail_stock_in_barang_barcode"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-semibold">Nama Barang</td>
+                                    <td id="detail_stock_in_nama_barang"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-semibold">Catatan</td>
+                                    <td id="detail_stock_in_catatan"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-semibold">Supplier</td>
+                                    <td id="detail_stock_in_supp"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-semibold">Qty</td>
+                                    <td id="detail_stock_in_qty"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-semibold">Harga Masuk</td>
+                                    <td id="detail_stock_in_harga_masuk"> </td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>

@@ -1,0 +1,81 @@
+
+
+    $(document).on('click', '#hapus_pelanggan', function() {
+        if (confirm('Apakah anda yakin?')) {
+            $.ajax({
+                type: 'POST',
+                url: '<?= site_url('pelanggan/delete/') ?>',
+                data: {
+                    'pelanggan_id': pelanggan_id
+                },
+                dataType: 'json',
+                success: function(result) {
+                    if (result.success == true) {
+                        $('#pelanggan_table').DataTable().ajax.reload(null, false).draw(false);
+                    } else {
+                        alert('Gagal hapus item cart')
+                    }
+                }
+            })
+        }
+    });
+
+    <!-- dari controller -->
+
+    public function delete()
+    {
+        $response = array();
+
+        $pelanggan_id = $this->request->getPost('pelanggan_id');
+        // $user_id = $this->session->get('user_id') ? $this->session->get('user_id') : '0';
+        // if (!$id) {
+        //     if ($this->cart->where('user_id', $user_id)->delete()) {
+        //         $response['success'] = true;
+        //     } else {
+        //         $response['success'] = false;
+        //     }
+        // } else {
+        //     if (!$this->validation->check($id, 'required|numeric')) {
+
+        //         throw new \CodeIgniter\Exceptions\PageNotFoundException();
+        //     } else {
+        //         if ($this->cart->where('id_cart', $id)->delete()) {
+        //             $response['success'] = true;
+        //         } else {
+        //             $response['success'] = false;
+        //         }
+        //     }
+        // }
+
+
+        // $this->PelangganModel->where('pelanggan_id', $pelanggan_id)->delete();
+        if ($this->PelangganModel->where('pelanggan_id', $pelanggan_id)->delete()) {
+            session()->setFlashdata('pesan', 'Data Pelanggan Berhasil Dihapus');
+            // return redirect()->to('pelanggan');
+            $response['success'] = true;
+        } else {
+            $response['success'] = false;
+        }
+
+        return $this->response->setJSON($response);
+    }
+
+    $(document).on('click', '#hapus_pelanggan', function() {
+        if (confirm('Apakah anda yakin?')) {
+            $.ajax({
+                type: 'POST',
+                url: '<?= site_url('pelanggan/delete') ?>',
+                data: {
+                    'pelanggan_id': pelanggan_id
+                },
+                dataType: 'json',
+                success: function(result) {
+                    if (result.success == true) {
+                        $('#pelanggan_table').DataTable().ajax.reload(null, false).draw(false);
+                    } else {
+                        alert('Gagal hapus item cart')
+                    }
+                }
+            })
+        }
+    });
